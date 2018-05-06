@@ -38,4 +38,9 @@ public class MainController {
         return JSONArray.toJSONString(list);
     }
 
+    @RequestMapping(value = "queryById",method = RequestMethod.POST)
+    String queryById(@RequestBody Enwords enwords){
+        Enwords result = enwordsService.queryById(enwords);
+        return JSON.toJSONString(result);
+    }
 }

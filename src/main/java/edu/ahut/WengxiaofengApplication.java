@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@MapperScan("edu.ahut.mapper")
 @SpringBootApplication
+@MapperScan("edu.ahut.mapper")
 public class WengxiaofengApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WengxiaofengApplication.class, args);
