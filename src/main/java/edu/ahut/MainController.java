@@ -29,7 +29,7 @@ public class MainController {
     //@ResponseBody
     @RequestMapping(value="/ETC",method = RequestMethod.POST)
     String queryFromEnglishToChinese(){
-        List<Map<String,Object>> list = jdbcTemplate.queryForList("select *from enwords where 单词 like 'abandon%'");
+        List<Map<String,Object>> list = jdbcTemplate.queryForList("select *from enwords where word like 'abandon%'");
         return JSONArray.toJSONString(list);
     }
     @RequestMapping(value = "/search",method = RequestMethod.POST)
