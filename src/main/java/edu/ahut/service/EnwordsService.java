@@ -22,8 +22,8 @@ public class EnwordsService {
         List<Enwords> list = enwordsMapper.translate(enwords);
         return list;
     }
-    public Enwords queryById(Enwords enwords){
-        Enwords result = enwordsMapper.queryById(enwords);
+    public List<Enwords> tips(Enwords enwords){
+        List<Enwords> result = enwordsMapper.tips(enwords);
         return result;
     }
 }

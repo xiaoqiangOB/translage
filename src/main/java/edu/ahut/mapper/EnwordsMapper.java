@@ -62,7 +62,7 @@ public interface EnwordsMapper {
      */
     int updateByExample(@Param("record") Enwords record, @Param("example") EnwordsExample example);
 
-    List<Enwords> translate(Enwords enwords);
+    List<Enwords> tips(Enwords enwords);
 
-    Enwords queryById(Enwords enwords);
+    List<Enwords> translate(Enwords enwords);
 }

@@ -38,8 +38,10 @@
         <!--
         <table tableName="live_course_channel" domainObjectName="LiveCourseChannel"></table>
 
-        -->
+
         <table tableName="enwords" domainObjectName="Enwords"></table>
+        <table tableName="cnwords" domainObjectName="Cnwords"></table>
+        <table tableName="janwords" domainObjectName="Janwords"></table>-->
 
 
     </context>

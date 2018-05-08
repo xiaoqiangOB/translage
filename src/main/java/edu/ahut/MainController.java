@@ -15,11 +15,12 @@ import java.util.Map;
 
 /**
  * @Author wengxiaofeng
- * @Description:
+ * @Description:英译汉controller
  * @Data create in 15:00 2018/3/2.
  * @Modified by:
  */
 @RestController
+@RequestMapping(value = "/eng")
 public class MainController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -38,9 +39,9 @@ public class MainController {
         return JSONArray.toJSONString(list);
     }
 
-    @RequestMapping(value = "queryById",method = RequestMethod.POST)
+    @RequestMapping(value = "/tips",method = RequestMethod.POST)
     String queryById(@RequestBody Enwords enwords){
-        Enwords result = enwordsService.queryById(enwords);
-        return JSON.toJSONString(result);
+        List<Enwords> result = enwordsService.tips(enwords);
+        return JSONArray.toJSONString(result);
     }
 }
